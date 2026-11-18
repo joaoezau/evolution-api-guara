@@ -5,5 +5,5 @@
 # (o cliente do Prisma ja vem gerado na imagem, feito na compilacao).
 FROM evoapicloud/evolution-api:v2.3.7
 USER root
-RUN chmod -R a+rwX /evolution/prisma
+RUN chmod -R a+rwX /evolution/prisma /evolution/node_modules/.prisma /evolution/node_modules/@prisma
 ENTRYPOINT ["/bin/bash", "-c", "npm run db:deploy && npm run start:prod"]
