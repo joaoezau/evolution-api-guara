@@ -1,4 +1,4 @@
-﻿# Evolution API para a Guara Cloud
+# Evolution API para a Guara Cloud
 # A imagem oficial recria prisma/migrations ao iniciar. A Guara roda o container sem
 # permissao de escrita ali, entao liberamos a escrita nas pastas que o script usa.
 FROM evoapicloud/evolution-api:v2.3.7
